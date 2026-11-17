@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Pyala POS — Restaurant &amp; Cafe Point of Sale</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0f172a;
+      --card: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #3b82f6;
+      --green: #10b981;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .brand { font-size: 1.65rem; font-weight: 700; margin: 0; }
+    .subtitle { color: var(--muted); margin: 4px 0 0; font-size: 0.95rem; }
+    nav a {
+      color: #93c5fd;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+    .hero, .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    h2 { margin-top: 0; font-size: 1.25rem; color: #e2e8f0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .feature {
+      background: #0b1220;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .feature strong { color: #93c5fd; display: block; margin-bottom: 6px; }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.14);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 36px;
+      padding-top: 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    a { color: #60a5fa; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1 class="brand">Cafe Pyala POS</h1>
+        <p class="subtitle">Offline-First Restaurant &amp; Cafe Management Software</p>
+      </div>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="badge">Desktop POS + Encrypted Local SQLite + Google Drive Backup</span>
+      <h2>Fast Billing, Kitchen Display &amp; Secure Cloud Database Backup</h2>
+      <p>
+        <strong>Cafe Pyala POS</strong> is an offline-first desktop Point of Sale application for cafes and restaurants.
+        Store data runs locally on your terminal in SQLite and optionally backs up your encrypted database snapshots
+        to your own Google Drive account.
+      </p>
+    </section>
+
+    <div class="grid">
+      <div class="feature">
+        <strong>POS Billing &amp; KOT Printing</strong>
+        Dine-In, Take Away, and Delivery workflows with instant Kitchen Order Tickets, itemized bills, and receipt printing.
+      </div>
+      <div class="feature">
+        <strong>Tables, Staff &amp; Inventory</strong>
+        Manage floor sections, waiters / order takers, purchases, suppliers, daily expenses, and sales reports.
+      </div>
+      <div class="feature">
+        <strong>Google Drive Backup &amp; Restore</strong>
+        Connect your Google Drive account to store database snapshots in a dedicated <code>CafePyala_Backups</code> folder
+        and restore backups securely with Administrator authentication.
+      </div>
+    </div>
+
+    <section class="card">
+      <h2>How Google Drive Permission Is Used</h2>
+      <p>
+        Cafe Pyala POS requests only the restricted per-file Google Drive scope
+        (<code>https://www.googleapis.com/auth/drive.file</code>). The software only creates, lists, downloads,
+        and deletes database backup files inside your app-created <code>CafePyala_Backups</code> folder. It never reads,
+        modifies, or accesses any other personal files in your Google Drive.
+      </p>
+    </section>
+
+    <footer>
+      <span>&copy; 2026 Cafe Pyala POS. All rights reserved.</span>
+      <span>
+        Support: <a href="mailto:fraza189@gmail.com">fraza189@gmail.com</a> &bull;
+        <a href="./privacy.html">Privacy Policy</a> &bull;
+        <a href="./terms.html">Terms of Service</a>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>
+

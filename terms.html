@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Cafe Pyala POS</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0f172a;
+      --card: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 20px 64px; }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 18px;
+      margin-bottom: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    nav a { color: #93c5fd; text-decoration: none; margin-left: 16px; }
+    nav a:hover { text-decoration: underline; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 28px; }
+    h1 { margin: 0 0 6px; font-size: 1.7rem; }
+    h2 { margin-top: 24px; font-size: 1.15rem; color: #93c5fd; }
+    p { color: #e2e8f0; }
+    .muted { color: var(--muted); font-size: 0.9rem; }
+    a { color: #60a5fa; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Terms of Service</h1>
+        <div class="muted">Cafe Pyala POS &bull; Effective Date: November 17, 2026</div>
+      </div>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+      </nav>
+    </header>
+
+    <main class="card">
+      <p>
+        By using <strong>Cafe Pyala POS</strong>, you agree to the following terms governing use of the software and optional
+        cloud backup features.
+      </p>
+
+      <h2>1. Software License &amp; Local Operation</h2>
+      <p>
+        Cafe Pyala POS stores business records locally on your hardware. Restaurant owners and administrators are responsible
+        for securing terminal access credentials, Admin passwords, and backup storage locations.
+      </p>
+
+      <h2>2. Cloud Backups (Google Drive, Dropbox &amp; Custom Endpoints)</h2>
+      <p>
+        When connecting third-party storage such as Google Drive, backups are saved directly to your authorized cloud account.
+        Database restores overwrite local active data (after creating a pre-restore safety snapshot) and require Administrator verification.
+      </p>
+
+      <h2>3. Limitation of Liability</h2>
+      <p>
+        The software is provided &ldquo;as is&rdquo; without warranty of uninterrupted third-party cloud availability. Users are encouraged to maintain both local and cloud backup schedules.
+      </p>
+
+      <h2>4. Contact</h2>
+      <p>Questions? Email <a href="mailto:fraza189@gmail.com">fraza189@gmail.com</a>.</p>
+    </main>
+  </div>
+</body>
+</html>
+
